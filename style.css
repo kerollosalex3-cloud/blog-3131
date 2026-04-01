@@ -39,3 +39,10 @@ footer {
     display: flex;
     gap: 16px;
 }
+
+h2 {
+    font-family: "Arima", system-ui;
+    font-weight: 700px;
+    text-align: center;
+    color: #4EA487;
+}
