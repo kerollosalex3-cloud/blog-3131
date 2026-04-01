@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Indie+Flower&family=Quicksand:wght@300..700&display=swap");
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header {
+  padding: 0 80px;
+  background-color: #4ea487;
+  display: flex;
+  height: 128px;
+  align-items: center;
+  gap: 102px;
+}
+#menu {
+  display: flex;
+  gap: 72px;
+}
+
+.link {
+  position: relative;
+  color: #f8f5eb;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: yellow;
+  transition: 0.3s;
+}
+
+.link:hover::after {
+  width: 100%;
+  left: 0;
+}
