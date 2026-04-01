@@ -1,6 +1,9 @@
+body {
+    margin: 0px;
+}
+
 .yellow-block {
     background-color: #F1C953;
     background-size: cover;
     height: 100vh;
-    margin: 0;
 }
