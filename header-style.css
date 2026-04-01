@@ -11,6 +11,7 @@ header {
     right: 0;
 
     background-color: #4EA487;
+    font-family: "Arima", system-ui;
 }
 
 .navbar {
@@ -21,4 +22,10 @@ header {
 .navbar a {
     color: white;
     text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;    
+}
+
+.navbar a:hover {
+    text-decoration: underline;
 }
