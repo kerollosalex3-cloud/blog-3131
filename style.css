@@ -47,9 +47,17 @@ h2 {
     text-align: center;
     color: #4EA487;
     gap: 8px;    
+    margin-bottom: 24px;
 }
 
 .h2-img {
     height: 48px;
     width: auto;
+}
+
+.contact-subline {
+    font-family: "Palanquin", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
 }
