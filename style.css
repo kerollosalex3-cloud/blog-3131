@@ -349,6 +349,7 @@ input {
 
 /*Highlights Section Start*/
 .highlights {
+    margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -421,13 +422,103 @@ input {
   height: 28px;
   width: 40px;
   border-radius: 50px;
-  background-color: #F1C953;
+  background-color: #f1c953;
 }
 .ellipses_dis {
- background-color: white;
- cursor: pointer;
+  background-color: white;
+  cursor: pointer;
   height: 28px;
   width: 28px;
-  border-radius:  50%;
+  border-radius: 50%;
 }
+
+/*Highlights Section Responsive*/
+@media (max-width: 768px) {
+    .highlights_pra {
+        display: none
+        ;
+    }
+    .highlights{
+        padding: 0 20px;
+    }
+  .header_photo {
+    margin-top: 20px;
+    width:100%;
+    height: 533px;
+    ;
+  }
+  .some_text {
+    max-width: 250px;
+    left: 10px;
+ 
+  }
+  .some_text h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .some_text p{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+
 /*Highlights Section End*/
+
+/*Hero_Web Start*/
+.hero_web {
+  position: relative;
+  background-image: url(img/Kapadokia.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 515px;
+  width: 100%;
+}
+.hero_div {
+  height: 515px;
+  width: 1911px;
+  background-color: #f1c953;
+}
+.hero_title {
+  display: none;
+  color: #54370d;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 120%;
+  text-align: center;
+  position: absolute;
+  bottom: 154px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-name: x;
+  animation-delay: 2s;
+}
+.hero_p {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 345px;
+  height: 132px;
+  font-family: "Palanquin";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 110.00000000000001%;
+  color: #54370d;
+  text-align: center;
+}
+/*Hero_Web Animation*/
+@keyframes x {
+  0% {
+    display: block;
+    transform: translate(0, 20px);
+  }
+  100% {
+    transform: translate(0, 20px);
+  }
+}
+/*Hero_Web End*/
