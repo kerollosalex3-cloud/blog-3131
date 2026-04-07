@@ -77,6 +77,15 @@ header {
   border-radius: 30px;
   background: #4ea48733;
 }
+.author_img {
+  min-width: 120px;
+  min-height: 120px;
+  background-image: url(img/1woman.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover ;
+  border-radius: 50%;
+}
 .author_info h1 {
   margin-top: 16px;
   font-weight: 700;
@@ -506,3 +515,8 @@ footer a {
     display: block;
   }
 }
+
+
+
+/* Ellipse 21 */
+
