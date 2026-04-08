@@ -28,10 +28,60 @@ header {
   gap: 72px;
 }
 .links {
+  position: relative;
+  font-size: 24px;
   text-decoration: none;
   color: #f8f5eb;
   font-weight: 700;
+  line-height: 80%;
 }
+/*Highlights Hover*/
+.highlights_link {
+  position: relative;
+}
+.Vector_highlights {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: -6px;
+  left: -4px;
+}
+.highlights_link:hover .Vector_highlights {
+  opacity: 1;
+}
+/*FAQ Hover*/
+.FAQ_link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.Vector_FAQ {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: -2px;
+  left: -4px;
+}
+.FAQ_link:hover .Vector_FAQ {
+  opacity: 1;
+}
+/*Content Hover*/
+.content_link {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.Vector_content {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  position: absolute;
+  bottom: -3px;
+  left: -4px;
+}
+.content_link:hover .Vector_content {
+  opacity: 1;
+}
+
 /*Headline + Info Start*/
 .headline_info {
   margin-top: 60px;
@@ -83,7 +133,7 @@ header {
   background-image: url(img/1woman.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size:cover ;
+  background-size: cover;
   border-radius: 50%;
 }
 .author_info h1 {
@@ -383,7 +433,7 @@ footer a {
   height: 88px;
 }
 /*Footer Section End*/
-.Ellipse{
+.Ellipse {
   display: none;
   flex-direction: row;
   gap: 10px;
@@ -399,7 +449,7 @@ footer a {
   border-radius: 50px;
   height: 30px;
   width: 57px;
-  background-color: #4EA487;
+  background-color: #4ea487;
 }
 /*Menu_Bar_Mob*/
 .Menu_Bar_Mob {
@@ -466,36 +516,36 @@ footer a {
     left: 18px;
   }
   /*cards Responsive Start*/
-.Ellipse {
-  display: flex;
-  cursor: pointer;
-}
+  .Ellipse {
+    display: flex;
+    cursor: pointer;
+  }
 
-.carousel__cards {
-  width: max-content;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  transition: transform 0.4s ease;
-}
+  .carousel__cards {
+    width: max-content;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    transition: transform 0.4s ease;
+  }
 
-.card {
-  flex-shrink: 0;
-  width: 260px;
-  height: 380px;
-  margin: 0;
-  transform: none !important;
-  transition: transform 0.4s ease;
-}
+  .card {
+    flex-shrink: 0;
+    width: 260px;
+    height: 380px;
+    margin: 0;
+    transform: none !important;
+    transition: transform 0.4s ease;
+  }
 
-.card__img {
-  width: 100%;
-  height: 100%;
-}
+  .card__img {
+    width: 100%;
+    height: 100%;
+  }
 
-.carousel__track-wrapper {
-    overflow: hidden; 
+  .carousel__track-wrapper {
+    overflow: hidden;
   }
   /*cards Responsive End*/
   .vector {
@@ -515,8 +565,3 @@ footer a {
     display: block;
   }
 }
-
-
-
-/* Ellipse 21 */
-
