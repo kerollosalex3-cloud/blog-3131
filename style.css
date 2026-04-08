@@ -349,7 +349,7 @@ input {
 
 /*Highlights Section Start*/
 .highlights {
-    margin-top: 50px;
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -434,23 +434,20 @@ input {
 
 /*Highlights Section Responsive*/
 @media (max-width: 768px) {
-    .highlights_pra {
-        display: none
-        ;
-    }
-    .highlights{
-        padding: 0 20px;
-    }
+  .highlights_pra {
+    display: none;
+  }
+  .highlights {
+    padding: 0 20px;
+  }
   .header_photo {
     margin-top: 20px;
-    width:100%;
+    width: 100%;
     height: 533px;
-    ;
   }
   .some_text {
     max-width: 250px;
     left: 10px;
- 
   }
   .some_text h1 {
     margin: 0;
@@ -458,7 +455,7 @@ input {
     font-size: 28px;
     font-weight: 700;
   }
-  .some_text p{
+  .some_text p {
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -479,29 +476,36 @@ input {
   width: 100%;
 }
 .hero_div {
+  position: absolute;
+  left: 0;
+  clip-path: path(
+    "M1454.48 515H0V0H1911V2.4628C1902.22 5.34648 1881.37 11.0301 1836.02 21.9998C1696.82 55.6701 1672.79 133.499 1656.86 169.999C1630.76 229.817 1691.37 324.499 1642.27 401.998C1616.75 442.275 1525.65 492 1454.48 515Z"
+  );
   height: 515px;
   width: 1911px;
   background-color: #f1c953;
+  animation:
+    divMove 1s ease-in 2.5s forwards,
+    divMove1 0.5s ease-in 4.5s forwards;
 }
 .hero_title {
-  display: none;
+  opacity: 0;
   color: #54370d;
   font-size: 60px;
   font-weight: 700;
   line-height: 120%;
-  text-align: center;
   position: absolute;
-  bottom: 154px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation-name: x;
-  animation-delay: 2s;
+  bottom: 57%;
+  left: 40%;
+  animation:
+    Cappadocia 1s ease 1s forwards,
+    moveRight 1s ease-in 2.5s forwards;
 }
 .hero_p {
+  opacity: 0;
   position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 115px;
+  left: 40%;
   width: 345px;
   height: 132px;
   font-family: "Palanquin";
@@ -509,16 +513,59 @@ input {
   font-size: 24px;
   line-height: 110.00000000000001%;
   color: #54370d;
-  text-align: center;
+  animation:
+    hero_p 1s ease 1s forwards,
+    moveRight 1s ease-in 2.5s forwards;
 }
 /*Hero_Web Animation*/
-@keyframes x {
+@keyframes Cappadocia {
   0% {
-    display: block;
-    transform: translate(0, 20px);
+    opacity: 0;
+    transform: translateY(50px);
   }
   100% {
-    transform: translate(0, 20px);
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes hero_p {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    left: 10%;
+  }
+}
+@keyframes divMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    left: -30%;
+  }
+}
+@keyframes divMove1 {
+  0% {
+    clip-path: path(
+      "M1454.48 515H0V0H1911V2.4628C1902.22 5.34648 1881.37 11.0301 1836.02 21.9998C1696.82 55.6701 1672.79 133.499 1656.86 169.999C1630.76 229.817 1691.37 324.499 1642.27 401.998C1616.75 442.275 1525.65 492 1454.48 515Z"
+    );
+
+    transform: translateX(0);
+  }
+  100% {
+    clip-path: path(
+      "M523.5 393C511.09 455.002 444 519.5 394 534C344 548.5 253.5 534 197 524.5C140.5 515 0 515 0 515V0H603.729H647C644.226 2.88368 605.827 19.0303 591.5 30C547.524 63.6702 505.5 106.5 513.067 169C525.464 271.399 539.213 314.5 523.5 393Z" fill="#F1C953"
+    );
+    left: -50%;
   }
 }
 /*Hero_Web End*/
